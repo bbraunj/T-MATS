@@ -95,6 +95,7 @@ static void mdlSetWorkWidths(SimStruct *S)
 {
     const char_T *rtParamNames[] = {"Aphy1In", "Aphy2In", "Y_M_FARVec", "X_M_TVec", "T_M_RtArray", "T_M_gammaArray", "s_M_Imp1", "s_M_Imp2", "s_M_V1", "s_M_V2", "IDes", "SWPS", "BPRdes", "MNp"};
     ssRegAllTunableParamsAsRunTimeParams(S, rtParamNames);
+    ssSupportsMultipleExecInstances(S, true);
 }
 #endif
 

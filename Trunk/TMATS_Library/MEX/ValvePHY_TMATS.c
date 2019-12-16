@@ -30,6 +30,7 @@ static void mdlSetWorkWidths(SimStruct *S)
 {
     const char_T *rtParamNames[] = {"s_V_Ae_vlv", "s_V_Ae_byp", "s_V_Ae_th", "X_V_FAR_vec", "T_V_Rt_vec", "Y_V_Tt_vec", "T_V_gamma_array"};
     ssRegAllTunableParamsAsRunTimeParams(S, rtParamNames);
+    ssSupportsMultipleExecInstances(S, true);
 }
 #endif
 

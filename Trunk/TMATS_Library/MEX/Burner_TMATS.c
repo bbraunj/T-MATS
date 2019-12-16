@@ -32,6 +32,7 @@ static void mdlSetWorkWidths(SimStruct *S)
 {
     const char_T *rtParamNames[] = {"LHV", "DPnormBurner", "Eff", "LHVEn", "hFuel"};
     ssRegAllTunableParamsAsRunTimeParams(S, rtParamNames);
+    ssSupportsMultipleExecInstances(S, true);
 }
 #endif /* MDL_SET_WORK_WIDTHS */
 

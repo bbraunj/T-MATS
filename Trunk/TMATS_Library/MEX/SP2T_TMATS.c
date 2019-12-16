@@ -15,6 +15,14 @@
 
 extern double sp2tc(double f, double g, double h);
 
+#define MDL_SET_WORK_WIDTHS
+#if defined(MDL_SET_WORK_WIDTHS) && defined(MATLAB_MEX_FILE)
+static void mdlSetWorkWidths(SimStruct *S)
+{
+    ssSupportsMultipleExecInstances(S, true);
+}
+#endif
+
 static void mdlInitializeSizes(SimStruct *S)
 {
     int i;

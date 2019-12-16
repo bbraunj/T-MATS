@@ -28,6 +28,7 @@ static void mdlSetWorkWidths(SimStruct *S)
 {
     const char_T *rtParamNames[] = {"VlvfullyOpen", "VlvdeadZone", "Valve_Ae", "X_V_PRVec", "T_V_WcVec"};
     ssRegAllTunableParamsAsRunTimeParams(S, rtParamNames);
+    ssSupportsMultipleExecInstances(S, true);
 }
 #endif
 

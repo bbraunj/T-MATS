@@ -45,6 +45,7 @@ static void mdlSetWorkWidths(SimStruct *S)
 {
     const char_T *rtParamNames[] = {"SwitchType", "flowLoss", "Y_N_FARVec", "T_N_RtArray", "X_N_TtVec", "T_N_MAP_gammaArray", "X_N_PEQPaVec", "T_N_CdThArray", "T_N_CvArray", "T_N_CfgArray", "T_N_TGArray", "X_N_TtVecTG", "iDesign", "WDes", "CfgEn"};
     ssRegAllTunableParamsAsRunTimeParams(S, rtParamNames);
+    ssSupportsMultipleExecInstances(S, true);
 }
 #endif
 
